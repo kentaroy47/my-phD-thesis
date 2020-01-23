@@ -1,0 +1,52 @@
+
+
+
+\newlength{\signaturespace}
+\setlength{\signaturespace}{.5in}
+
+
+\long\def\signature#1{%
+\begin{flushright}
+\begin{minipage}{5in}
+\parindent=0pt
+I certify that I have read this dissertation and that, in my opinion,
+it is fully adequate in scope and quality as a dissertation for the degree
+of Doctor of Philosophy.
+\par
+\vspace{\signaturespace}
+%\hbox to 4in{\hfil\shortstack{\vrule width 3in height 0.4pt\\ #1}}
+\hbox to 5in{\hfil\begin{tabular}{@{}l@{}}\vrule width 3in height
+    0.4pt depth 0pt\\ #1\end{tabular}}
+\end{minipage}
+\end{flushright}}
+
+
+
+\long\def\ucgssignature{%
+\begin{flushright}
+\begin{minipage}{5in}
+\parindent=0pt
+\hfill 
+\par
+\vspace{\signaturespace}
+\hbox to 5in{\hfil\begin{tabular}{@{}l@{}}\vrule width 3in height
+    0.4pt depth 0pt\end{tabular}}
+\end{minipage}
+\end{flushright}}
+
+
+\def\signaturepage{% 
+%\def\thepage{}
+%\thispagestyle{myheadings}
+%\markboth{\rm \@author}{\rm \@author}%\fi
+\signature{(Hiroki Ishikuro)\quad Principal advisor}
+  \vfill
+% if second principal advisor
+\signature{(Tadahiro Kuroda)\quad Co-advisor}
+\vfill
+\signature{(Nobuhiko Nakano)\quad Co-advisor}
+\vfill
+\signature{(Tetsuya Iizuka)\quad Co-advisor}
+\vfill\
+%\ucgssignature
+}

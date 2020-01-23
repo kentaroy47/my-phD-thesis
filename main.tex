@@ -1,0 +1,88 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[colorlinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage[doublespacing]{setspace}
+\usepackage{titling}
+\usepackage{url}
+\usepackage{thesis}
+\usepackage{color}
+\fancyhead[LE,RO]{\thesection}
+\usepackage[style=ieee]{biblatex}
+\bibliography{main.bib}
+
+\title{
+{\large A Dissertation for the degree of }\\
+{\large Doctor of Philosophy}\\
+{\textbf{Successive-Approximation Based CMOS Process-Scalable Hybrid ADCs}}\\
+{\large Graduate School of Science and Technology}\\
+{\large Keio University}\\
+{\includegraphics[width=0.3\textwidth]{1200px-Keio_University_emblem.png}}}
+\author{{YOSHIOKA, Kentaro}}
+\date{August 2019}
+
+\pagenumbering{arabic}
+
+\begin{document}
+\maketitle
+
+\chapter*{Abstract}
+\input{chapters/abst}
+
+\newpage
+
+% copyright
+\newpage \thispagestyle{empty} \vspace*{\fill}
+\copyright \author{Kentaro Yoshioka}
+\noindent \date{August 2019} \\
+\noindent All rights reserved by Kentaro Yoshioka. August 2019.
+\vspace*{\fill} \newpage \rm
+
+\chapter*{Acknowledgements}
+\input{chapters/acknowledgements}
+ 
+\tableofcontents
+\thispagestyle{empty}
+\listoffigures
+\listoftables
+\newpage
+
+\chapter{Introduction}
+\input{chapters/chapter1}
+ 
+\chapter{Digital Amplifier}
+\input{chapters/chapter2}
+ 
+\chapter{Dynamic Architecture Configuring}
+\input{chapters/chapter3}
+ 
+\chapter{Threshold Configuring Comparator}
+\input{chapters/chapter4}
+ 
+\chapter{Conclusions}
+\input{chapters/conclusion}
+
+
+\printbibliography
+
+% pub list
+\input{chapters/publist}
+
+% version
+\newpage \thispagestyle{empty} \vspace*{\fill}
+\noindent Revision Information.
+
+\noindent July 9, 2019. Version 1.0 (Official version for Ph.D defence).
+
+\noindent July 30, 2019. Version 1.1 (Official version for the final dissertation).
+
+\noindent August 5, 2019. Version 1.2 (Official version for publishing).
+\vspace*{\fill} \newpage \rm
+
+\end{document}
